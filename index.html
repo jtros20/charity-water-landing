@@ -2,79 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity: Water Landing Page</title>
   <style>
-    :root {
-      --yellow: #FFD400;
-      --white: #FFFFFF;
-      --light-gray: #F5F5F5;
-      --charcoal: #333333;
-      --deep-teal: #006A6A;
-      --warm-sand: #E7D7C1;
-    }
-
     body {
       margin: 0;
-      font-family: "Proxima Nova", Avenir, Montserrat, sans-serif;
-      background-color: var(--white);
-      color: var(--charcoal);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      font-family: "Montserrat", sans-serif;
+      background: #ffffff;
     }
 
     header {
-      background-color: var(--warm-sand);
-      width: 100%;
+      background-color: #e5d4be;
       padding: 20px 0;
       text-align: center;
     }
 
     header img {
-      height: 30px;
-      vertical-align: middle;
+      height: 50px;
     }
 
-    .hero-image {
-      width: 100%;
+    main img {
       display: block;
-      max-height: 500px;
+      width: 100%;
+      max-height: 600px;
       object-fit: cover;
     }
 
-    .content {
-      background-color: var(--deep-teal);
-      color: var(--white);
-      padding: 40px 20px;
+    .teal-section {
+      background-color: #006c70;
+      color: white;
       text-align: center;
+      padding: 40px 20px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
-    .content h1 {
+    .teal-section h1 {
       margin-top: 0;
       font-size: 2em;
-      font-weight: 700;
     }
 
-    .content p {
-      font-size: 1em;
+    .teal-section p {
       max-width: 600px;
       margin: 0 auto 30px;
+      line-height: 1.5;
     }
 
     .cta-button {
-      background-color: var(--yellow);
-      color: var(--charcoal);
-      text-decoration: none;
-      padding: 15px 30px;
+      background-color: #fcd20b;
+      color: #333;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
       border-radius: 4px;
-      font-weight: 600;
+      text-decoration: none;
       display: inline-block;
-      transition: background-color 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: #e6c200;
+      background-color: #e5c200;
     }
   </style>
 </head>
@@ -83,23 +70,20 @@
     <img src="images/cw_logo-2.png" alt="Charity: Water logo" />
   </header>
 
-  <img src="images/6137_Ethiopia_2019_CG-.jpg" alt="Smiling family with clean water" />
+  <main>
+    <img
+      src="images/6137_Ethiopia_2019_CG-.jpg"
+      alt="Smiling family with clean water"
+    />
 
-  <section class="content">
-    <h1>Make Clean Water Possible</h1>
-    <p>
-      Every drop counts. 705 projects and 199,756 lives transformed because every donation drives lasting change.
-    </p>
-    <a href="#donate" class="cta-button">Give Clean Water</a>
-  </section>
-
-  <script>
-    // Optional: Smooth scroll to donation section or modal
-    document.querySelector('.cta-button').addEventListener('click', function(e) {
-      e.preventDefault();
-      alert('Thank you for choosing to give clean water!');
-      // In a real page, you could scroll to a donation form instead.
-    });
-  </script>
+    <section class="teal-section">
+      <h1>Make Clean Water Possible</h1>
+      <p>
+        Every drop counts. 705 projects and 199,756 lives transformed because
+        every donation drives lasting change.
+      </p>
+      <a href="#" class="cta-button">Give Clean Water</a>
+    </section>
+  </main>
 </body>
 </html>
